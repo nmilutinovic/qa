@@ -1,2 +1,7 @@
-# qa
-Homework for QA
+Documentation
+=============
+
+Homework
+--------
+
+[Go to homework](doc/Homework.md)
