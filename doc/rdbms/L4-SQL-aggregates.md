@@ -107,7 +107,7 @@ Taking the previous example, try to select only the row(s) with minimum value fo
 the number of rentals.
 
 Hint: you might need 2 queries for that.
-Hint: MySQL can be a bit specific when nesting queries
+Hint: If you see an error "Every derived table must have its own alias. " check this out [Stackoverflow](http://stackoverflow.com/questions/1888779/every-derived-table-must-have-its-own-alias)
 
 <div class="hidden">
 	SELECT customer_id, min(cnt) FROM (SELECT customer_id, count(*) as cnt FROM sakila.rental group by customer_id order by cnt) as q1;
